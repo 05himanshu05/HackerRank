@@ -10,8 +10,8 @@ public class FindPairSum {
 
 		int[] A = { 8, 7, 2, 5, 3, 1 };
 		int sum = 10;
-		// findPair(A, sum);
-		// finaPairUsingMap(A, sum);
+		//findPair(A, sum);
+		 finaPairUsingMap(A, sum);
 
 		ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 10, 2, 2, 10, 3, 3, 3, 4, 5, 5));
 

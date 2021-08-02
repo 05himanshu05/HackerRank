@@ -23,12 +23,12 @@ public class FibonacciExample {
 		
 		for (int i = N; i > 1; i--) {
 			  
-           // System.out.print(fib(i) + " ");
+            System.out.print(fib(i) + " ");
         }
 		
-		Date dNow = new Date();
-        SimpleDateFormat ft = new SimpleDateFormat("yyMMddhhmmss");
-        String datetime = ft.format(dNow);
-        System.out.println(datetime);
+		//Date dNow = new Date();
+        //SimpleDateFormat ft = new SimpleDateFormat("yyMMddhhmmss");
+        //String datetime = ft.format(dNow);
+        //System.out.println(datetime);
 	}
 }	

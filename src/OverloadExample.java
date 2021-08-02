@@ -18,7 +18,7 @@ class overload{
 	}
 }
 
-public class OverloadExample {
+public class OverloadExample{
 	public static void main(String[] args) {
 		
 	overload over = new overload();

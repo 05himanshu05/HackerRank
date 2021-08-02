@@ -46,6 +46,14 @@ public class CharchterCount {
 
 	}
 	
+	public static String removeAllDigit(String str)
+    {
+        // Replaces all the sequence of characters
+        // that matches the given regex with
+        // the given replacement string
+        return str.replaceAll("\\d", "");
+    }
+	
 	static void wordCountWithoutCollection(String s) {
 		
 		String[] words = s.split(" ");
@@ -102,8 +110,10 @@ public class CharchterCount {
 
 		//System.out.println(wordCount("Test SDET himanshu test"));
 		
-		wordCountWithoutCollection("Test SDET himanshu test");
+		//wordCountWithoutCollection("Test SDET himanshu test");
 		
 		//System.out.println(integerCount(12334));
+		
+		System.out.println(removeAllDigit("GeeksForGeeks123"));
 	}
 }

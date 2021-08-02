@@ -44,7 +44,7 @@ public class MinCountToDelete {
 				
 				if( (list.get(i)>0) && (list.get(i)==list.get(j))) {
 				
-					//System.out.println(j);
+					System.out.println(j);
 					list.set(j, list.get(j)-1);
 					
 					deletionCount++;

@@ -9,11 +9,11 @@ public class Java8NewFeatures {
 
 	public static void main(String[] args) {
 
-		//filterAndCollect();
+		filterAndCollect();
 		
-		//flatMapExample();
+		filterWithMax();
 		
-		Stream.iterate(40, n -> n + 2).limit(21).forEach(System.out::println);
+		//Stream.iterate(40, n -> n + 2).limit(21).forEach(System.out::println);
 		
 	}
 
@@ -36,7 +36,7 @@ public class Java8NewFeatures {
 
 	static void filterAndReduce() {
 
-		List<Integer> list = Arrays.asList(10, 13, 5, 15, 12, 20, 11, 25, 16);
+		List<Integer> list = Arrays.asList(10, 13, 5, 15, 12, 20, 11, 25, 16,21);
 
 		int sum = list.stream().filter(i -> i % 3 == 0).reduce((a, b) -> a + b).get();
 

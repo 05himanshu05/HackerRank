@@ -9,15 +9,15 @@ public class OLAGlassdoor {
 
 		// charcaterCounting("aabbbcccc");
 		// printFibSeriesWiOutArray();
-		/*
-		 * String s1 = "test"; String s2 = "estt"; boolean ans =
-		 * anagramCheck(s1.toCharArray(), s2.toCharArray()); if(ans) {
-		 * System.out.println("Anagrams"); }
-		 * 
-		 * else { System.out.println("Not Anagrams"); }
-		 */
+		
+		  String s1 = "test"; String s2 = "estt"; boolean ans =
+		  anagramCheck(s1.toCharArray(), s2.toCharArray()); if(ans) {
+		  System.out.println("Anagrams"); }
+		  
+		  else { System.out.println("Not Anagrams"); }
+		 
 
-		wordCounting();
+		//wordCounting();
 	}
 
 	static void charcaterCounting(String s) {
