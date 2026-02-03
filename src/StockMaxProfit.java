@@ -6,9 +6,12 @@ public class StockMaxProfit {
 	public static void main(String[] args) {
 		
 		ArrayList<Integer> list = new ArrayList<>();
+		list.add(7);
 		list.add(1);
-		list.add(2);
-		list.add(100);
+		list.add(5);
+		list.add(3);
+		list.add(6);
+		list.add(4);
 		
 		System.out.println(stockmax(list));
 	}
@@ -24,12 +27,12 @@ public class StockMaxProfit {
 			if (prices.get(i) > maxsofar) {
 				
 				maxsofar = prices.get(i);
-				System.out.println("max value = "+maxsofar);
+				//System.out.println("max value = "+maxsofar);
 			}
 
 			profit += maxsofar - prices.get(i);
 			
-			System.out.println("profit = " + profit);
+			//System.out.println("profit = " + profit);
 		}
 		return profit;
 	}

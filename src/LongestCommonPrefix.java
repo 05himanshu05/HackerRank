@@ -25,12 +25,12 @@ public class LongestCommonPrefix {
 	
 		String prefix = strs[0];
 		
-		System.out.println(prefix);
+		//System.out.println(prefix);
 		
 		for(int i=1; i <strs.length;i++) {
 			
 			prefix = commonPrefix(prefix, strs[i]);
-			System.out.println(prefix);
+			//System.out.println(prefix);
 		}
 		
 		
@@ -44,6 +44,6 @@ public class LongestCommonPrefix {
 		
 		String n = longestCommonPrefix(str);
 		
-		System.out.println(n+""+n.length());
+		System.out.println(n+" = "+n.length());
 	}
 }

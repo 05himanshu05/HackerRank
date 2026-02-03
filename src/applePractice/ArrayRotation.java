@@ -1,3 +1,4 @@
+package applePractice;
 
 public class ArrayRotation {
 
@@ -72,7 +73,7 @@ public class ArrayRotation {
 		//StringBuffer sb = new StringBuffer("test");
 		
 		//System.out.println(righrotate("goldmansache", 3));
-		//rotate(a,3);
-		rotate1(a,3);
+		rotate(a,3);
+		//rotate1(a,3);
 	}
 }
