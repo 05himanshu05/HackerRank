@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class JavaStreamPractice {
     static void main() {
-
+        // Intermediate = map , filter , sorted  Terminal Methods = count , reduce, collect
         // Find Duplicate Number
         List<Integer> list = Arrays.asList(1, 2, 3, 2, 4, 5, 1, 6);
         HashSet<Integer> set = new HashSet<>();

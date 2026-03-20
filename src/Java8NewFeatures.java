@@ -9,12 +9,24 @@ public class Java8NewFeatures {
 
 	public static void main(String[] args) {
 
-		filterAndCollect();
+		//filterAndCollect();
 		
-		filterWithMax();
+		//filterWithMax();
+
+		//filterAndReduce();
 		
 		//Stream.iterate(40, n -> n + 2).limit(21).forEach(System.out::println);
-		
+
+		String s = "himanshu";
+
+		String rev = "";
+		for (int i =s.length()-1 ; i>=0;i--) {
+			rev = rev + s.charAt(i);
+		}
+		System.out.println(rev);
+
+		String collect = s.chars().distinct().mapToObj((c -> String.valueOf((char) c))).collect(Collectors.joining());
+		System.out.println(collect);
 	}
 
 	static void filterExample() {

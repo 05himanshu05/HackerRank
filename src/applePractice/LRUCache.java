@@ -3,25 +3,37 @@ package applePractice;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class LRUCache {
+public class LRUCache<k,v> extends LinkedHashMap<k,v> {
 
-    int limit;
-    private LinkedHashMap<Integer,Integer> cache;
+    private  int intCapacity;
 
     public LRUCache(int capacity) {
+        super(capacity,0.75f,true);
+        this.intCapacity = capacity;
+    }
 
-        limit = capacity;
-        //Node n1 = new Node();
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<k, v> eldest) {
+        return size() > intCapacity;
+    }
 
+    public static void main(String[] args) {
+        LRUCache<String,Integer> lruCache = new LRUCache<>(3);
+        lruCache.put("One",1);
+        lruCache.put("Two",2);
+        lruCache.put("Three",3);
+        lruCache.put("Four",4);
+
+        lruCache.get("Two");
+
+        System.out.println(lruCache);
 
     }
 
-    public int get(int key) {
+    // Creating a generic cache
+    // Extending LinkedHashMap
+    // LinkedHashMap already maintains a doubly linked list internally in addition to a hash table.
 
-        return key;
-    }
-
-    public void put(int key, int value) {
-
-    }
+    // false → maintains insertion order
+    // true → maintains access order
 }

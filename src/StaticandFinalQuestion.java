@@ -3,6 +3,7 @@ public class StaticandFinalQuestion {
     static int a = 1;
 
     int b = 1;
+    final int c =1;
 
     static void main() {
 
@@ -17,6 +18,8 @@ public class StaticandFinalQuestion {
 
         h1.b = 2;
         h2.b = 4;
+
+        // h1.c = 2; reassign is not possible
 
         System.out.println(h1.a);
         System.out.println(h2.a);
