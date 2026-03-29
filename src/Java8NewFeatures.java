@@ -26,7 +26,7 @@ public class Java8NewFeatures {
 		System.out.println(rev);
 
 		String collect = s.chars().distinct().mapToObj((c -> String.valueOf((char) c))).collect(Collectors.joining());
-		System.out.println(collect);
+		System.out.println("value of collect == = " + collect);
 	}
 
 	static void filterExample() {

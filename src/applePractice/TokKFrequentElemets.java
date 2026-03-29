@@ -1,8 +1,6 @@
 package applePractice;
 
-import java.util.HashMap;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 public class TokKFrequentElemets {
 
@@ -31,9 +29,33 @@ public class TokKFrequentElemets {
                 queue.poll();
             }
         }
-        while (k-->0){
+        while (k -->0){
             res[k] = queue.poll();
         }
         return res;
     }
+
+//    //time complexity O(n log K)
+//    List<Integer> topKFrequent(int[] nums, int k) {
+//
+//        Map<Integer, Integer> freqMap = new HashMap<>();
+//        for(int num : nums ){
+//            freqMap.put(num, freqMap.getOrDefault(num,0)+1);
+//        }
+//        Queue<Integer> queue = new PriorityQueue<>((a,b) -> freqMap.get(a)- freqMap.get(b));
+//
+//        for(int key: freqMap.keySet()){
+//            queue.offer(key);
+//            if (queue.size() > k){
+//                queue.poll();
+//            }
+//        }
+//
+//        List<Integer> res = new ArrayList<>();
+//        while(!queue.isEmpty()){
+//            res.add(queue.poll());
+//        }
+//
+//        return res;
+//    }
 }

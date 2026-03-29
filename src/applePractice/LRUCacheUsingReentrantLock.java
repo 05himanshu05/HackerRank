@@ -1,4 +1,5 @@
 package applePractice;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.*;
 
@@ -18,14 +19,14 @@ public class LRUCacheUsingReentrantLock<K,V> {
     }
 
     private final int capacity;
-    private final Map<K, Node> map;
+    private final ConcurrentHashMap<K, Node> map;
     private final Node head;
     private final Node tail;
     private final ReentrantLock lock = new ReentrantLock();
 
     public LRUCacheUsingReentrantLock(int capacity) {
         this.capacity = capacity;
-        this.map = new HashMap<>();
+        this.map = new ConcurrentHashMap<>();
 
         head = new Node(null, null);
         tail = new Node(null, null);

@@ -38,7 +38,7 @@ public class ArrayRotation {
 			nums[0] = temp;
 		}
 		for (int num:nums){
-			System.out.println(" ---" + num + "--- ");
+			System.out.print(" "+num);
 		}
 	}
 

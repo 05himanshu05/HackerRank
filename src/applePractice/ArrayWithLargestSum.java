@@ -1,12 +1,14 @@
 package applePractice;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class ArrayWithLargestSum {
 
     // kadane's Algoritham
     static void main() {
         int[] arr = {-2,-3,4,-1,-2,1,5,-3};
+
         System.out.println(maxSubArray(arr));
     }
 
@@ -32,7 +34,7 @@ public class ArrayWithLargestSum {
                 sum = 0;
             }
         }
-        int[] sub = Arrays.copyOfRange(nums, 2, 7);
+        int[] sub = Arrays.copyOfRange(nums, ansStart, ansEnd);
         System.out.println(Arrays.toString(sub));
         return max;
     }
